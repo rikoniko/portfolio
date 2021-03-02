@@ -1,0 +1,667 @@
+html{
+    height: auto;
+}
+body{
+    margin: 0;
+    padding:0;
+    background-color:white;
+    height: auto;
+    background-image: url("../img/dog.png");
+    background-repeat: repeat-y;
+    background-size:100%;
+}
+
+header{
+    width:100%;
+    height: 116px;
+    background-color:rgba(210,105,30,0.9);
+}
+
+.main_contents{
+    background-color:rgba(250,235,215,0.8);
+    width:80%;
+    margin: 0 10%;
+    height: auto;
+    float:left;
+}
+
+.sub_contents{
+    float:left;
+    width:80%;
+    background-color: rgba(250,235,215,0.8);
+    margin:0 10%;
+    height: auto;
+    padding-bottom:25px;
+}
+
+h1{
+    padding-top:10px;
+    margin-bottom:0;
+    color:white;
+    text-shadow: 1px 1px 0 #000,-1px -1px 0 #000,
+                -1px 1px 0 #000, 1px -1px 0 #000,
+                0px 1px 0 #000,  0-1px 0 #000,
+                -1px 0 0 #000, 1px 0 0 #000;
+    text-align: center;
+}
+
+
+h2{
+    position: relative;
+    color: #000;
+    border-bottom: 2px solid #000;
+    text-align:center;
+    font-size:23px;
+    font-weight:lighter;
+}
+
+video{
+    width: 500px;
+    z-index:2;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.videos{
+    text-align: center;
+}
+.video_list{
+    width:80%;
+    margin:0 auto;
+}
+
+pre{
+    white-space: pre-wrap;
+    margin:0;
+    
+}
+
+.code{
+    margin:0 auto;
+    width:80%;
+    height: auto;
+}
+
+.text{
+    width:100%;
+    height:auto;
+}
+.codes{
+    width:100%;
+    height:auto;
+}
+
+.profile-img{
+    width:45%;
+    
+    display: block;
+    float:left;
+}
+
+.profile-img img{
+    width:240px;
+    border-radius: 50%;
+    display: block;
+    float:right;
+    margin-right: 60px;
+}
+
+.profile{
+    width:80%;
+    
+    margin:0 auto;
+}
+
+.profile-text{
+    float:left;
+    margin-top:30px;
+}
+
+.skill-list{
+    width:80%;
+    margin:0 auto;
+}
+
+.skill{
+    float: left;
+    width:50%;
+}
+
+.java,.c,.cpp,.html,.css,.javascript{
+    position: relative;
+    background-color:#e0edff;
+    max-width: 500px;
+    width:70%;
+    height:80px;
+    margin:5px auto;
+}
+
+.java li,.c li,.cpp li,.html li,.css li,.javascript li{
+    list-style-type: none;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.java p,.c p,.cpp p,.html p,.css p,.javascript p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width:180px;
+}
+
+
+
+/*
+.skill li{
+    list-style-type: none;
+    text-align: center;
+    display: block;
+    width: 50%;
+}
+
+
+.skill p{
+    text-align: center;
+}
+
+.skill{
+    float:left;
+    background-color:rgba(255,255,255,0.8);
+    width:30%;
+    margin:0 5% 20px 5%;
+    padding:0 30px;
+    
+}*/
+
+.works{
+    width:80%;
+    margin:0 auto;
+}
+
+.work{
+    width:50%;
+    position:relative;
+    float:left;
+    margin:0 auto;
+    text-align: center;
+}
+
+.work div{
+    position:absolute;
+    color:white;
+    font-weight: bold;
+    width:150px;
+    left:50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+}
+
+.pf img{
+    max-width: 500px;
+    width: 93%;
+    margin-bottom:25px;
+}
+
+.game img{
+    max-width: 500px;
+    width: 100%;
+    margin-bottom:25px;
+}
+
+.work p{
+    margin:10px 0;
+}
+
+.work a{
+    position: absolute;
+    width:130px;
+    text-decoration: none;
+    background-color:rgba(210,105,30,0.9);
+    color:white;
+    padding:5px 10px;
+    display: block;
+}
+
+.work a:hover{
+    background: #ff8c00;
+}
+
+/*スキルのチェックマーク*/
+.fa-check{
+    padding-right:20px;
+    
+}
+/*ナビゲーションの下矢印*/
+.fa-angle-down{
+    padding-left:20px;
+}
+
+.desc{
+    width:80%;
+    margin:0 auto;
+}
+
+.detail{
+    width:80%;
+    margin:0 auto;
+}
+
+.article{
+    width:80%;
+    margin:0 auto;
+}
+
+
+
+
+h4{
+    font-size: 23px;
+    margin:0;
+}
+.light {
+    position: relative;
+    padding-left: 45px;
+}
+.light:before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0eb";
+    background: #ffca2c;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    top:50%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.light:after {
+    /*吹き出しのちょこんと出た部分*/
+    content: '';
+    display: block;
+    position: absolute;
+    left: 26px;
+    height: 0;
+    width: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 12px solid #ffca2c;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.triangle{
+    position: relative;
+    padding-left: 45px;
+}
+
+.triangle:before{
+    position: absolute;
+      font-family: "Font Awesome 5 Free";
+      content: "\f071";
+      background: #cc3300;
+      color: white;
+      font-weight: 900;
+      font-size: 20px;
+      border-radius: 50%;
+      left: 0;
+      width: 33px;
+      height: 33px;
+      line-height: 30px;
+    top:50%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+.triangle:after {
+  /*吹き出しのちょこんと出た部分*/
+  content: '';
+  display: block;
+  position: absolute;
+  left: 29px;
+  height: 0;
+  width: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid #cc3300;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.code_title{
+    position: relative;
+    padding: 0.6em;
+    background: #e0edff;
+}
+
+.code_title:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
+}
+
+.range-image{
+    width:450px;
+    display: block;
+    margin:auto;
+}
+
+/*ナビゲーション*/
+.menu {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu li{
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+.menu > li {
+    float: left;
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(255,255,255,0.9);
+    /*background: rgba(29, 33, 19,0.9);*/
+}
+
+.menu > li a {
+    display: block;
+    color: black;
+}
+
+.menu > li a:hover {
+    color: #999;
+}
+
+ul.menu-second {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.menu:before,
+.menu:after {
+    content: " ";
+    display: table;
+}
+
+.menu:after {
+    clear: both;
+}
+
+.menu {
+    *zoom: 1;
+}
+
+.menu > li.menu-single {
+    position: relative;
+}
+
+li.menu-single ul.menu-second {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    background: #072A24;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    padding:0px;
+}
+
+li.menu-single:hover ul.menu-second {
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.black{
+    background: inherit;
+    color: black;
+    
+}
+
+#page_top{
+  width: 100px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #ef3f98;
+  opacity: 0.6;
+  border-radius: 15px;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f1b0';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -25px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 35px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.error-count{
+    text-align: center;
+}
+
+.error-count img{
+    width:150px;
+    display: block;
+    margin:auto;
+}
+
+.error-count p{
+    margin: 0;
+}
+
+.leonAndfood{
+    width:500px;
+    display: block;
+    margin: auto;
+}
+
+.sourcecode{
+    background-color:rgba(210,105,30,0.9);
+    width:130px;
+    margin:auto;
+    text-align:center;
+    font-weight: bold;
+}
+
+.sourcecode a{
+    text-decoration:none;
+    display: block;
+    color:#fff;
+    padding: 5px 10px;
+}
+
+.sourcecode a:hover{
+    background: #ff8c00;
+}
+
+.profile-list {
+  width: 50%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.profile-list .lists {
+  float: left;
+  margin-right: 0px;
+  width: 160px;
+}
+
+.profile-list .listanswer {
+  width: 100%;
+}
+
+.listname {
+  display: inline-block;
+    position:relative;
+  padding: 5px 15px; 
+  margin: 5px;
+  border-radius: 12px;
+  background: #e0edff;
+}
+
+.listname:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-left: 15px solid #e0edff;
+}
+
+.listname p {
+  margin: 0;
+  padding: 0;
+}
+
+.listanswer{
+    /*position:relative;
+    /*padding: 5px 15px;*/
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.listanswer p{
+    margin: 0 0 0 160px;
+}
+
+.under-success{
+    background: linear-gradient(transparent 70%, #fa8072 70%);
+}
+
+.under-miss{
+    background: linear-gradient(transparent 70%, #87ceeb 70%);
+}
+
+.under{
+    background: linear-gradient(transparent 70%, #e0edff 70%);
+}
+
+.coordinate{
+    width:50%;
+    float: left;
+    text-align: center;
+}
+
+.coordinate img{
+    width:78%;
+}
+
+.hidden-show p{
+    margin:8px;
+}
+
+.hidden{
+    margin: 10px;
+    padding: 0;
+}
+
+.hidden label {
+    padding: 15px;
+    font-weight: bold;
+    background: #efefef;
+    border-radius: 5px;
+    cursor :pointer;
+    transition: .5s;
+}
+
+/*アイコンを表示*/
+.hidden label:before {
+    display: inline-block;
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 5px;
+    transition: 0.2s;
+    margin:20px;
+}
+
+/*ボタンホバー時*/
+.hidden label:hover {
+    background: silver;
+}
+
+/*チェックは見えなくする*/
+.hidden input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden .hidden-show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden input:checked ~ .hidden-show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+
+footer{
+    background-color:rgba(210,105,30,0.9);
+    float:left;
+    text-align: center;
+    width:100%;
+    padding:15px 0;
+}
