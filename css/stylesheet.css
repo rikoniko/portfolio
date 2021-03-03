@@ -93,7 +93,6 @@ pre{
 
 .profile-img{
     width:45%;
-    
     display: block;
     float:left;
 }
@@ -108,7 +107,6 @@ pre{
 
 .profile{
     width:80%;
-    
     margin:0 auto;
 }
 
@@ -153,30 +151,6 @@ pre{
     text-align: center;
     width:180px;
 }
-
-
-
-/*
-.skill li{
-    list-style-type: none;
-    text-align: center;
-    display: block;
-    width: 50%;
-}
-
-
-.skill p{
-    text-align: center;
-}
-
-.skill{
-    float:left;
-    background-color:rgba(255,255,255,0.8);
-    width:30%;
-    margin:0 5% 20px 5%;
-    padding:0 30px;
-    
-}*/
 
 .works{
     width:80%;
@@ -259,8 +233,6 @@ pre{
 }
 
 
-
-
 h4{
     font-size: 23px;
     margin:0;
@@ -328,7 +300,6 @@ h4{
 }
 
 .triangle:after {
-  /*吹き出しのちょこんと出た部分*/
   content: '';
   display: block;
   position: absolute;
@@ -368,37 +339,44 @@ h4{
 /*ナビゲーション*/
 .menu {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 50px;
     max-width: 1000px;
     margin: 0 auto;
+    padding:0;
 }
+
 
 .menu li{
     list-style-type: none;
     text-align: center;
+    border-left:solid 10px #696969;
+    border-right:solid 10px #696969;
+    background-color: rgba(255,255,255,0.9);
+    margin:0 2px;
 }
 
 .menu li a{
     text-decoration: none;
+    
 }
 
 .menu > li {
     float: left;
-    width: 30%;
+    width:45%;
     height: 50px;
     line-height: 50px;
-    background-color: rgba(255,255,255,0.9);
-    /*background: rgba(29, 33, 19,0.9);*/
+    background-color: rgba(255,255,255,0.9); 
 }
 
 .menu > li a {
     display: block;
-    color: black;
+    color: #696969;
 }
 
 .menu > li a:hover {
-    color: #999;
+    color: rgba(210,105,30,0.9);
+    background-color:#fffff0;
 }
 
 ul.menu-second {
@@ -429,7 +407,7 @@ li.menu-single ul.menu-second {
     position: absolute;
     top: 40px;
     width: 100%;
-    background: #072A24;
+    background-color:rgba(255,255,255,0.9);
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
     padding:0px;
@@ -441,11 +419,11 @@ li.menu-single:hover ul.menu-second {
     opacity: 1;
 }
 
-.black{
-    background: inherit;
-    color: black;
-    
+.menu-second li{
+    margin:0;
+    border-style:none;
 }
+
 
 #page_top{
   width: 100px;
@@ -573,10 +551,7 @@ li.menu-single:hover ul.menu-second {
 }
 
 .listanswer{
-    /*position:relative;
-    /*padding: 5px 15px;*/
     padding-top: 10px;
-    padding-left: 20px;
 }
 .listanswer p{
     margin: 0 0 0 160px;
@@ -622,7 +597,6 @@ li.menu-single:hover ul.menu-second {
     transition: .5s;
 }
 
-/*アイコンを表示*/
 .hidden label:before {
     display: inline-block;
     content: '\f078';
@@ -632,17 +606,14 @@ li.menu-single:hover ul.menu-second {
     margin:20px;
 }
 
-/*ボタンホバー時*/
 .hidden label:hover {
     background: silver;
 }
 
-/*チェックは見えなくする*/
 .hidden input {
     display: none;
 }
 
-/*中身を非表示にしておく*/
 .hidden .hidden-show {
     height: 0;
     padding: 0;
@@ -651,7 +622,6 @@ li.menu-single:hover ul.menu-second {
     transition: 0.8s;
 }
 
-/*クリックで中身表示*/
 .hidden input:checked ~ .hidden-show {
     padding: 10px 0;
     height: auto;
